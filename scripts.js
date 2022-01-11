@@ -1,8 +1,12 @@
-//Print to console
-console.log("Hello!");
-console.log(4 + 4);
+//Invoice example
+var sign = "Bristol Zoo!";
+var length = sign.length;
+var subtotal = length * 2.99;
+var shipping = 4.99;
+var total = subtotal+shipping;
 
-//Variables
-var total = 14.0;
-console.log("£" + total); //Concatentation
-console.log(`The total price is £${total}.`) //Interpolation
+document.getElementById("userSign").innerHTML= sign;
+document.getElementById("tiles").textContent = length;
+document.getElementById("subtotal").textContent = `£${subtotal}`;
+document.getElementById("shipping").textContent = `£${shipping}`;
+document.getElementById("total").textContent = `£${total}`;
